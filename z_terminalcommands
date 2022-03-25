@@ -1,0 +1,21 @@
+pwd print working directery
+cd~ or cd
+mkdir
+ls
+Ctrl D = closes terminal window, ends session
+Ctrl C KILLS RUNNING COMMAND DO NOT USE THIS FOR COPYING
+# open VSC and add a folder to main (myifrstwebsite) and create a server.py file in main
+# go ahead and install python extensions if you havent already
+# write script in sever.py
+# after done runnig script, command terinal say:
+FLASK_APP=server flask run
+
+
+forgetting password fuck ups
+started a linux ON THE SAME MACHINE where linux was already installed from a LIVE CD (<--wtf)
+then we MOUNTED the hard drive of the installed linux 
+then we "chrooted" into the installed hard drive as root
+using ls /home we figure out my username (spacecat) 
+then we used the "passwd" command to COMMAND IT TO OBEY ME (passwd spacecat aka reset spacecat's password)
+
+ fuck roomates

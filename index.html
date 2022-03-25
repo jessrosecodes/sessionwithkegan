@@ -1,0 +1,122 @@
+<pre>To run a command as administrator (user &quot;root&quot;), use &quot;sudo &lt;command&gt;&quot;.
+    See &quot;man sudo_root&quot; for details.
+    
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~</b></font>$ pmd
+    
+    Command &apos;pmd&apos; not found, but there are 21 similar ones.
+    
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~</b></font>$ pwd
+    /home/spacecat
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~</b></font>$ cd source
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source</b></font>$ mkdir myfirstwebsite
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source</b></font>$ cd ..
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~</b></font>$ cd downloads
+    bash: cd: downloads: No such file or directory
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~</b></font>$ cd Cownloads
+    bash: cd: Cownloads: No such file or directory
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~</b></font>$ cd Downloads
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/Downloads</b></font>$ dpkg -i google-chrome-stable_current_amd64.deb 
+    <b>dpkg:</b> <font color="#CC0000"><b>error:</b></font> requested operation requires superuser privilege
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/Downloads</b></font>$ sudo dpkg -i google-chrome-stable_current_amd64.deb 
+    [sudo] password for spacecat: 
+    Selecting previously unselected package google-chrome-stable.
+    (Reading database ... 180922 files and directories currently installed.)
+    Preparing to unpack google-chrome-stable_current_amd64.deb ...
+    Unpacking google-chrome-stable (98.0.4758.80-1) ...
+    Setting up google-chrome-stable (98.0.4758.80-1) ...
+    update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
+    update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
+    update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
+    Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+    Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+    Processing triggers for mime-support (3.64ubuntu1) ...
+    Processing triggers for man-db (2.9.1-1) ...
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/Downloads</b></font>$ sudo dpkg -i code_1.64.0-1643863948_amd64.deb 
+    Selecting previously unselected package code.
+    (Reading database ... 181034 files and directories currently installed.)
+    Preparing to unpack code_1.64.0-1643863948_amd64.deb ...
+    Unpacking code (1.64.0-1643863948) ...
+    Setting up code (1.64.0-1643863948) ...
+    Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+    Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+    Processing triggers for mime-support (3.64ubuntu1) ...
+    Processing triggers for shared-mime-info (1.15-1) ...
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/Downloads</b></font>$ cd ../source
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source</b></font>$ cd myfirstwebsite
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ python3 -m venv venv
+    The virtual environment was not created successfully because ensurepip is not
+    available.  On Debian/Ubuntu systems, you need to install the python3-venv
+    package using the following command.
+    
+        apt install python3.8-venv
+    
+    You may need to use sudo with that command.  After installing the python3-venv
+    package, recreate your virtual environment.
+    
+    Failing command: [&apos;/home/spacecat/source/myfirstwebsite/venv/bin/python3&apos;, &apos;-Im&apos;, &apos;ensurepip&apos;, &apos;--upgrade&apos;, &apos;--default-pip&apos;]
+    
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ sudo apt install python3.8-venv
+    Reading package lists... Done
+    Building dependency tree       
+    Reading state information... Done
+    The following additional packages will be installed:
+      python-pip-whl python3-distutils
+    The following NEW packages will be installed:
+      python-pip-whl python3-distutils python3.8-venv
+    0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+    Need to get 1,952 kB of archives.
+    After this operation, 3,735 kB of additional disk space will be used.
+    Do you want to continue? [Y/n] Y
+    Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python-pip-whl all 20.0.2-5ubuntu1.6 [1,805 kB]
+    Get:2 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-distutils all 3.8.10-0ubuntu1~20.04 [141 kB]
+    Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3.8-venv amd64 3.8.10-0ubuntu1~20.04.2 [5,444 B]
+    Fetched 1,952 kB in 3s (600 kB/s)<font color="#C4A000">    </font>
+    Selecting previously unselected package python-pip-whl.
+    (Reading database ... 182526 files and directories currently installed.)
+    Preparing to unpack .../python-pip-whl_20.0.2-5ubuntu1.6_all.deb ...
+    Unpacking python-pip-whl (20.0.2-5ubuntu1.6) ...
+    Selecting previously unselected package python3-distutils.
+    Preparing to unpack .../python3-distutils_3.8.10-0ubuntu1~20.04_all.deb ...
+    Unpacking python3-distutils (3.8.10-0ubuntu1~20.04) ...
+    Selecting previously unselected package python3.8-venv.
+    Preparing to unpack .../python3.8-venv_3.8.10-0ubuntu1~20.04.2_amd64.deb ...
+    Unpacking python3.8-venv (3.8.10-0ubuntu1~20.04.2) ...
+    Setting up python3-distutils (3.8.10-0ubuntu1~20.04) ...
+    Setting up python-pip-whl (20.0.2-5ubuntu1.6) ...
+    Setting up python3.8-venv (3.8.10-0ubuntu1~20.04.2) ...
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ python3 -m venv venv
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ ^C
+    <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ . venv/bin/activate
+    (venv) <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ which python3
+    /home/spacecat/source/myfirstwebsite/venv/bin/python3
+    (venv) <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ pip install flask
+    Collecting flask
+      Downloading Flask-2.0.2-py3-none-any.whl (95 kB)
+         |████████████████████████████████| 95 kB 3.0 MB/s 
+    Collecting click&gt;=7.1.2
+      Downloading click-8.0.3-py3-none-any.whl (97 kB)
+         |████████████████████████████████| 97 kB 4.3 MB/s 
+    Collecting Werkzeug&gt;=2.0
+      Downloading Werkzeug-2.0.2-py3-none-any.whl (288 kB)
+         |████████████████████████████████| 288 kB 7.4 MB/s 
+    Collecting itsdangerous&gt;=2.0
+      Downloading itsdangerous-2.0.1-py3-none-any.whl (18 kB)
+    Collecting Jinja2&gt;=3.0
+      Downloading Jinja2-3.0.3-py3-none-any.whl (133 kB)
+         |████████████████████████████████| 133 kB 4.8 MB/s 
+    Collecting MarkupSafe&gt;=2.0
+      Downloading MarkupSafe-2.0.1-cp38-cp38-manylinux2010_x86_64.whl (30 kB)
+    Installing collected packages: click, Werkzeug, itsdangerous, MarkupSafe, Jinja2, flask
+    Successfully installed Jinja2-3.0.3 MarkupSafe-2.0.1 Werkzeug-2.0.2 click-8.0.3 flask-2.0.2 itsdangerous-2.0.1
+    (venv) <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ python server.py
+    (venv) <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ FLASK_APP=server flask run
+     * Serving Flask app &apos;server&apos; (lazy loading)
+     * Environment: production
+    <font color="#CC0000">   WARNING: This is a development server. Do not use it in a production deployment.</font>
+    <font color="#AAAAAA">   Use a production WSGI server instead.</font>
+     * Debug mode: off
+     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+    127.0.0.1 - - [03/Feb/2022 21:56:14] &quot;GET / HTTP/1.1&quot; 200 -
+    127.0.0.1 - - [03/Feb/2022 21:56:15] &quot;<font color="#C4A000">GET /favicon.ico HTTP/1.1</font>&quot; 404 -
+    ^C(venv) <font color="#4E9A06"><b>spacecat@ubuntu</b></font>:<font color="#3465A4"><b>~/source/myfirstwebsite</b></font>$ 
+    </pre>

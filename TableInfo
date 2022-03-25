@@ -1,0 +1,37 @@
+
+sudo apt install python3.8-venv
+python3 -m venv venv
+
+. venv/bin/activate #command to run whenever i am working on this project
+#. = shorthand for source
+# type // which python3// into terminal, outputshould ave //(venv)//
+# which indicates you are running python3 within your virtual envronment
+# Terms: Bash, Shell
+# Now VE is installed, next step is to pip install flask
+
+EFN Logger Configuration
+
+Button Text: 
+Restart Subscriptions
+ReadOPCUA Server
+Interactive, Toggle Button
+Submit
+Cancel
+
+
+PLC -> DB Map
+
+OPC UA Server
+"On/Off Toggle" OPC Address
+Button		Input Box
+
+Grafana Read Only Credentials
+Login		Password
+Test		Text
+
+Influx Connection
+"X" 	Host 	Port 	SSL 	 Database 	Login	Password 	Timeout (ms) "On/Off Toggle"
+Button	Text	Text	Checkbox Text		Text	Text		Text		Button
+
+PLC Subscription and Available Ports
+
